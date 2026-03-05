@@ -10,7 +10,6 @@ export const useDrivePortfolio = (categoryName: string) => {
 
     // Substitua pela sua API KEY real
     const API_KEY = import.meta.env.VITE_GOOGLE_DRIVE_API_KEY;
-    console.log("Chave carregada no hook:", API_KEY);
 
     // Mapeamento exato das suas pastas do Drive
     const folderMap: Record<string, string | string[]> = {
