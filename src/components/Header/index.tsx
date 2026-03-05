@@ -75,7 +75,7 @@ export const Header = () => {
                 <form onSubmit={handleAccessGallery}>
                 <input 
                     type="text" 
-                    placeholder="Ex: galeriadeselecaoteste"
+                    placeholder="Ex: galeriadeselecao"
                     value={galleryId}
                     onChange={(e) => setGalleryId(e.target.value)}
                     autoFocus
