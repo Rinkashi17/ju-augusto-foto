@@ -34,8 +34,6 @@ export const Header = () => {
 
             <S.NavMenu $isOpen={isOpen}>
             <S.NavLink to="/" onClick={() => setIsOpen(false)}>Início</S.NavLink>
-            <S.NavLink to="/sobre" onClick={() => setIsOpen(false)}>Sobre</S.NavLink>
-            <S.NavLink to="/portfolio" onClick={() => setIsOpen(false)}>Portfólio</S.NavLink>
             
             {/* Alterado de Link para botão que abre o modal */}
             <button
