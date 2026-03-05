@@ -24,7 +24,7 @@ export const Contato = () => {
                 </div>
             </S.ContactCard>
 
-            <S.ContactCard href="https://instagram.com/perfil">
+            <S.ContactCard href="https://www.instagram.com/juaugusto.foto/">
                 <div className="icon"><FaInstagram /></div>
                 <div className="text">
                 <span>Chamar no Instagram</span>
@@ -32,9 +32,9 @@ export const Contato = () => {
                 </div>
             </S.ContactCard>
 
-            <S.InstagramGrid href="https://instagram.com/perfil" target="_blank">
+            <S.InstagramGrid href="https://www.instagram.com/juaugusto.foto/" target="_blank">
                 <FaInstagram />
-                <span>Acompanhe o dia a dia no @perfil</span>
+                <span>Acompanhe o dia a dia no @juaugusto.foto</span>
             </S.InstagramGrid>
             </S.ActionSide>
         </S.Container>

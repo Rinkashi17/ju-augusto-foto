@@ -7,6 +7,13 @@ export const Hero = () => {
     // Insira aqui o ID da pasta do Drive que contém as fotos da Hero
     const { fotosHero } = useDriveHero(import.meta.env.VITE_FOLDER_PATROA);
 
+    const scrollToSection = () => {
+    const element = document.getElementById('#Categorias');
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
+    };
+
     return (
         <S.HeroContainer>
         {fotosHero.length > 0 && (
@@ -33,10 +40,11 @@ export const Hero = () => {
         <S.HeroContent>
         <S.Title>Eternizando a <br/> sua essência</S.Title>
         <S.BioText>
-            Especialista em retratos femininos e momentos reais. 
-            Transformo luz em memórias que você poderá tocar.
+            Especialista em ensaios de Marca Pessoal e Gestante. Registrando suas fases sem abrir mão da sua essência.
         </S.BioText>
-        <S.CTAButton>Conhecer Trabalho</S.CTAButton>
+        <a href="#Categorias">
+        <S.CTAButton onClick={scrollToSection}>Conhecer Trabalho</S.CTAButton>
+        </a>
         </S.HeroContent>
     </S.HeroContainer>
     );

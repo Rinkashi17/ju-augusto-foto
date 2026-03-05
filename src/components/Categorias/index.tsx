@@ -26,7 +26,7 @@ const CategoryCardItem = ({ cat }: { cat: CategoryProps }) => {
     
 
     return (
-    <S.CategoryCard to={`/portfolio/${cat.slug}`} $bgImage={capaUrl}>
+    <S.CategoryCard id='Categorias' to={`/portfolio/${cat.slug}`} $bgImage={capaUrl}>
         {loading ? (
         <S.Skeleton />
         ) : (
